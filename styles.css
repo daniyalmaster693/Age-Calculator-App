@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 450px;
+  width: 565px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 150px;
+  box-shadow: 0 2px 20px rgb(133 133 133 / 1%);
+}
+
+.inputs {
+  display: flex;
+  gap: 25px;
+}
+
+.day-input,
+.month-input,
+.year-input {
+  height: 55px;
+  width: 105px;
+  color: #1c1c1c;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  border: 1px solid #dbdbdb;
+  border-radius: 7px;
+  padding-left: 17px;
+}
+
+.day-input.error,
+.month-input.error,
+.year-input.error {
+  border: #e4878c solid 1px;
+  cursor: pointer;
+}
+
+.day-input:focus,
+.month-input:focus,
+.year-input:focus {
+  outline: #864cff solid 1px;
+  cursor: pointer;
+}
+
+.day-input.error:focus,
+.month-input.error:focus,
+.year-input.error:focus {
+  outline: #e4878c solid 1px;
+  cursor: pointer;
+}
+
+.inputs input::placeholder {
+  color: #8f8f8f;
+}
+
+.day-label,
+.month-label,
+.year-label {
+  color: #707070;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.day-label.error,
+.month-label.error,
+.year-label.error {
+  color: #e66063;
+}
+
+.day-error,
+.month-error,
+.year-error {
+  color: #e4878c;
+  font-size: 10.5px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-style: italic;
+  opacity: 0;
+}
+
+.hr {
+  border-top: 1px solid #ededed;
+  margin-top: 0px;
+}
+
+.calculate {
+  position: relative;
+  background-color: #864cff;
+  border-radius: 50%;
+  width: 73px;
+  height: 73px;
+  margin-left: 500px;
+  margin-top: -60px;
+  bottom: 11px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+
+.calculate:hover {
+  background-color: #151515;
+}
+
+.results {
+  line-height: 40px;
+  margin-top: -40px;
+}
+
+.results.error {
+  margin-top: -50px;
+}
+
+.results span {
+  color: #864cfe;
+  font-style: italic;
+}
+
+.results h1 {
+  color: #151515;
+  font-size: 75px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  color: black;
+  font-family: "Nunito Sans";
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    height: 330px;
+    width: 445px;
+  }
+
+  .day-input,
+  .month-input,
+  .year-input {
+    height: 40px;
+    width: 90px;
+  }
+
+  .calculate {
+    height: 63px;
+    width: 63px;
+    margin-left: 400px;
+  }
+
+  .results h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    height: 330px;
+    width: 390px;
+  }
+
+  .day-input,
+  .month-input,
+  .year-input {
+    height: 30px;
+    width: 80px;
+  }
+
+  .calculate {
+    height: 53px;
+    width: 53px;
+    margin-left: 350px;
+  }
+
+  .results h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    height: 320px;
+    width: 320px;
+  }
+
+  .day-input,
+  .month-input,
+  .year-input {
+    height: 25px;
+    width: 75px;
+  }
+
+  .calculate {
+    height: 43px;
+    width: 43px;
+    margin-left: 300px;
+  }
+
+  .results h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <script src="script.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="inputs">
+        <div class="day">
+          <p class="day-label">DAY</p>
+          <input
+            type="text"
+            placeholder="DD"
+            class="day-input"
+            maxlength="2"
+            minlength="1"
+          />
+          <p class="day-error">Must be a valid day</p>
+        </div>
+
+        <div class="month">
+          <p class="month-label">MONTH</p>
+          <input
+            type="text"
+            placeholder="MM"
+            class="month-input"
+            maxlength="2"
+            minlength="1"
+          />
+          <p class="month-error">Must be a valid month</p>
+        </div>
+
+        <div class="year">
+          <p class="year-label">YEAR</p>
+          <input
+            type="text"
+            placeholder="YYYY"
+            class="year-input"
+            maxlength="4"
+            minlength="1"
+          />
+          <p class="year-error">Must be in the past</p>
+        </div>
+      </div>
+
+      <div class="calculate-age">
+        <hr class="hr" />
+        <button class="calculate">
+          <img src="icon-arrow.svg" alt="arrow" />
+        </button>
+      </div>
+
+      <div class="results">
+        <div class="years">
+          <h1><span class="year-result">- -</span> years</h1>
+        </div>
+
+        <div class="months">
+          <h1><span class="month-result">- -</span> months</h1>
+        </div>
+
+        <div class="days">
+          <h1><span class="day-result">- -</span> days</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/Blaze4884" target="_blank" rel="noopener"
+          >Daniyal Master</a
+        >.
+      </p>
+    </div>
+  </body>
+</html>
