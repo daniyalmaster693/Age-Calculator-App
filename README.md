@@ -8,7 +8,7 @@ A basic HTML, CSS, and JS challenge from Frontend Mentor. This is the solution t
 <h2> Links </h2>
 
 <li> Link to solution: https://www.frontendmentor.io/solutions/age-calculator-app-zdG1_3n8Xq </li>
-<li> Link to live demo: https://blaze4884.github.io/Age-Calculator-App/ </li>
+<li> Link to live demo: https://daniyalmaster6930-age-calculator-app.vercel.app </li>
 
 <h2> What have I learned </h2>
 
